@@ -1,0 +1,31 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divece-width, initial-scale=1">
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    </head>
+    <body>
+
+        <section class="hero is-small-with-navar is-success">
+            <div class="hero-body">
+                <h1 class="Title">
+                    Django Girls Blog -AP
+                </h1>
+                <p class="subtitule">
+                    Programación comercial 
+                </p>
+            </div>
+        </section>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                  {% block content %} 
+                  {% endblock %}
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
